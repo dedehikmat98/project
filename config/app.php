@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => Toko_Buku,
+    'name' => 'Toko-Buku',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +176,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        //Add plus
+        Collective\Html\HtmlServiceProvider::class,
+        Laratrust\LaratrustServiceProvider::class,
+
 
     ],
 
@@ -225,6 +229,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        //Add plus
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Laratrust' => Laratrust\LaratrustFacade::class,
 
     ],
 
